@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>products</title>
+  <link rel="stylesheet" href="css/test2.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <div class="menu">
+      <div class="container flex-correct">
+        <ul>
+          <li><a href="#" class="mobile_menu_burger"><img src="img/burger.png" alt="Burger"></a></li>         
+          <li class="elem_menu"><a href="/products">home</a></li>
+          <li class="elem_menu">
+            <div class="count-products">
+              <div class="count"></div>
+            </div>
+            <a href="/basket" class="textBasket">your basket</a>
+          </li>
+          <li class="elem_menu"><a href="/history">History</a></li>
+          <li class="elem_menu"><a href="/logOut">Log out</a></li>
+        </ul>
+        <span>User</span>
+      </div>
+
+    </div>
+    <div class="mobile_menu container">
+      <ul class="mobile_elements">
+        <li><a href="/products">home</a></li>
+        <li><a href="/basket">your basket</a></li>
+        <li><a href="/history">History</a></li>
+        <li><a href="/logOut">Log out</a></li>
+      </ul>
+    </div>
+    <script>
+    $('.mobile_menu_burger').click(function(){
+       $('.mobile_menu').fadeToggle();
+    });
+  </script>
+  </div>
+  <div class="content">
+    
+  </div>
+  <div class="footer">
+    <div class="sign">Internet shop designed by Dmytro Kozhanov</div>
+    <div class="follow">
+      <a href="#"><img src="img/follow-facebook.png" alt="facebook"></a>
+      <a href="#"><img src="img/follow-linkedIN.png" alt="linkedIN"></a>
+      <a href="#"><img src="img/follow-twitter.png" alt="twitter"></a>
+      <a href="#"><img src="img/follow-instagram.png" alt="instagram"></a>
+    </div>
+    <p>all rights reserved</p>
+  </div>
+</div>
+
+
+</body></html>

@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #d0e5ed;
+	height: 100%;
+}
+.menu{
+	background-color: #5e8798;
+	width: 100%;
+	height: 90px;
+}
+.wrapper{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.menu .login{
+	text-decoration: none;
+	color:inherit;
+}
+.container{
+	margin: 0px 83px;
+	
+}
+.flex-correct{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.menu .container{
+	height: inherit;
+	align-items: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-size: 25px;
+	color: #d0e5ed;
+}
+.menu .container ul{
+	list-style: none;
+	display: flex;
+
+}
+.menu .container ul li a{
+	text-decoration: none;
+	color: #d0e5ed;
+	padding: 29px 45px;
+}
+.menu .container ul li a:hover{
+	text-decoration: none;
+	color: #d0e5ed;
+	background-color: #3f4c52;
+	padding: 29px 45px;
+}
+.count-products{
+
+	position: absolute;
+	top: 35px;
+	margin-left: 210px;
+	background-color: #a54e4e;
+	width: 40px;
+	height: 20px;
+	border-radius: 10px;
+	font-size: 12px;
+}
+.count{
+	padding-top: 2px;
+	padding-right: 10px;
+	text-align: right;
+}
+/*content*/
+.product{
+	font-family: "Roboto", sans-serif;
+	margin-top: 10px;
+	background-color: #a3c8dd;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	margin: 10px auto;
+}
+.product img {
+	margin: 10px;
+}
+.product p {
+	font-size: 24px;
+	color: #3f4c52;
+	text-transform: uppercase;
+	text-align: center;
+}
+.price{
+	margin-left: 10px;
+	width: 140px;
+}
+.old{
+	text-align: center;
+	color: #3f4c52;
+}
+.discount {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e1a26f;
+	height: 35px;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 24px;
+}
+.without-discount {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #c8e16f;
+	height: 35px;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 24px;
+	margin-top: 20px;
+}
+.stars{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 10px;
+	margin-top: 20px;
+	width: 140px;
+
+}
+.active-star{
+	background-image: url(../img/active-star.png);
+	width: 21px;
+	height: 19px;
+}
+.star{
+	background-image: url(../img/star.png);
+	width: 21px;
+	height: 19px;
+}
+.product button{ 
+	margin: 0px 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	color: #3f4c52;
+	font-size: 24px;
+}
+.product button {
+	font-family: "Roboto", sans-serif;
+	background: #a3c8dd;
+	border: 0;
+	width: 280px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin: 0 10px;
+	display: inline-block;
+	color: #3f4c52;
+	font-weight: 300;
+	text-decoration: none;
+	user-select: none;
+	padding: 5px 2px;
+	transition: 0.2s;
+}
+.product button:hover { cursor: pointer; background: rgba(255,255,255,.2); }
+.product button:active { background: rgba(255,255,255,.5); }
+.content{
+	padding-bottom: 50px;
+	flex-grow: 1;
+}
+.footer{
+	font-family: "Roboto", sans-serif;
+	background-color: #5e8798;
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	flex-grow: 0;
+}
+.sign{
+	color: #bcd4dd;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.footer p{
+	font-size: 10px;
+	color: #bcd4dd;
+	text-transform: uppercase;
+	align-items: flex-end;
+}
+.products {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.inputAmount{
+	justify-content: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+	color: #3f4c52;
+	text-transform: uppercase;
+}
+.buy{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+.buy button{
+	margin: 0px 10px;
+	margin-bottom: 5px;
+	color: #3f4c52;
+	font-size: 24px;
+}
+.buy button {
+
+	font-family: "Roboto", sans-serif;
+	background: #a3c8dd;
+	border: 0;
+	width: 280px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin: 0 10px;
+	display: inline-block;
+	color: #3f4c52;
+	font-weight: 300;
+	text-decoration: none;
+	user-select: none;
+	padding: 5px 2px;
+	transition: 0.2s;
+}
+.buy button:hover { color: #d0e5ed;cursor: pointer; background: #5e8798; }
+.buy button:active { color: #d0e5ed;background: #4d6979; }

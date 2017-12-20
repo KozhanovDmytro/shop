@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
+
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+.linear-product{
+	background-color: #a3c8dd;
+	width: inherit;
+	height: 220px;
+	margin: 10px 0;
+	display: flex;
+}
+.linear-product img{
+	margin: 10px;
+}
+.info{
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.info h1{
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	color: #3f4c52;
+}
+.info h3{
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	color: #3f4c52;
+}
+.info p{
+	font-family: "Roboto", sans-serif;
+	color: #3f4c52;
+}
+.info form{
+	margin-top: 25px;
+	align-self: flex-end;
+
+}
+.info form button{
+	align-self: flex-end;
+	margin: 0px 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	color: #3f4c52;
+	font-size: 24px;
+	font-family: "Roboto", sans-serif;
+	background: #a3c8dd;
+	border: 0;
+	width: 280px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin: 0 10px;
+	display: inline-block;
+	color: #3f4c52;
+	font-weight: 300;
+	text-decoration: none;
+	user-select: none;
+	padding: 5px 2px;
+	transition: 0.2s;
+}
+.info form button:hover { background: rgba(255,255,255,.2); }
+.info form button:active { background: rgba(255,255,255,.5); }

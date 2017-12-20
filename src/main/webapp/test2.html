@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>products</title>
+  <link rel="stylesheet" href="css/test2.css">
+  <link rel="stylesheet" href="css/history.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header"> 
+    <div class="menu">
+      <div class="container flex-correct">
+        <ul>
+          <li><a href="#" class="mobile_menu_burger"><img src="img/burger.png" alt="Burger"></a></li>         
+          <li class="elem_menu"><a href="/products">home</a></li>
+          <li class="elem_menu">
+            <div class="count-products">
+              <div class="count"></div>
+            </div>
+            <a href="/basket" class="textBasket">your basket</a>
+          </li>
+          <li class="elem_menu"><a href="#">History</a></li>
+          <li class="elem_menu"><a href="#">Log out</a></li>
+        </ul>
+        <!-- <span class="userName">User</span> -->
+        <span>User</span>
+      </div>
+
+    </div>
+    <div class="mobile_menu container">
+      <ul class="mobile_elements">
+        <li><a href="#">home</a></li>
+        <li><a href="#">your basket</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Log out</a></li>
+      </ul>
+    </div>
+    <script>
+    $('.mobile_menu_burger').click(function(){
+       $('.mobile_menu').fadeToggle();
+    });
+  </script>
+  </div>
+  <div class="content">
+    <div class="container flex-column">
+    	<div class="linear-product">
+    		<img src="img/products/t-shirt.jpg" alt="shirt">
+    		<div style="margin: 10px; width: 100%;">
+    			<div class="info">
+    				<h1>Shirt</h1>
+    				<h3>Price: 200 $</h3>
+    				<h3>Time: 2017-12-16 17:11:44.00000</h3>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse aliquid ratione sit maiores, recusandae aliquam ipsum odio debitis dolor minima, aut placeat voluptatem iste officia doloribus provident, harum eligendi saepe.</p>
+    				<form action="/history" method="post">
+    					<input type="radio" name="estimate" value="1">
+    					<input type="radio" name="estimate" value="2">
+    					<input type="radio" name="estimate" value="3">
+    					<input type="radio" name="estimate" value="4">
+    					<input type="radio" name="estimate" value="5">
+    					<button>estimate</button>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="sign">Internet shop designed by Dmytro Kozhanov</div>
+    <div class="follow">
+      <a href="#"><img src="img/follow-facebook.png" alt="facebook"></a>
+      <a href="#"><img src="img/follow-linkedIN.png" alt="linkedIN"></a>
+      <a href="#"><img src="img/follow-twitter.png" alt="twitter"></a>
+      <a href="#"><img src="img/follow-instagram.png" alt="instagram"></a>
+    </div>
+    <p>all rights reserved</p>
+  </div>
+</div>
+
+
+</body></html>
