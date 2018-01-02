@@ -26,6 +26,7 @@ public class ShowHistory extends HttpServlet {
             response.sendRedirect("/login");
             return;
         }
+        System.out.println(request.getSession().getAttribute("idUser"));
         int count = 0;
         String countQuery = "SELECT count(*) FROM internet_shop.basket WHERE idUser=" + request.getSession().getAttribute("idUser") + ";";
 
