@@ -11,7 +11,7 @@ import java.sql.SQLException;
 public class JdbcUtil {
 
     private static final String DRIVER = "com.mysql.jdbc.Driver";
-    private static final String URL_AMENDED = "jdbc:mysql://localhost:3306/internet_shop?serverTimezone=UTC&useSSL=false";
+    private static final String URL_AMENDED = "jdbc:mysql://mysql:3306/internet_shop?serverTimezone=UTC&useSSL=false";
     private static final String USER = "root";
     private static final String PASSWORD = "root";
 
