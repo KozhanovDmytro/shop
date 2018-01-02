@@ -67,12 +67,7 @@ public class ShowHistory extends HttpServlet {
             dispatcher.forward(request, response);
         } catch (SQLException e) {
             e.printStackTrace();
-            PrintWriter pw = response.getWriter();
-            pw.write(e.toString());
-        } catch (Exception e){
-            PrintWriter pw = response.getWriter();
-            pw.write(Arrays.toString(e.getStackTrace()));
-        }
+        } 
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String estimate = request.getParameter("estimate");
