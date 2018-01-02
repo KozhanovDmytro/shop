@@ -27,7 +27,7 @@ public class ShowAllProducts extends HttpServlet {
             return;
         }
         int count = 0;
-        String countQuery = "SELECT count(*) FROM internet_shop.basket;";
+        String countQuery = "SELECT count(*) FROM internet_shop.basket WHERE idUser=" + request.getSession().getAttribute("idUser") + ";";
         String productsQuery = "SELECT * FROM internet_shop.products;";
 
         LinkedList<ProductDaoImpl> products = new LinkedList();

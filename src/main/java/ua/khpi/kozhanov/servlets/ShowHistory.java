@@ -27,7 +27,7 @@ public class ShowHistory extends HttpServlet {
             return;
         }
         int count = 0;
-        String countQuery = "SELECT count(*) FROM internet_shop.basket;";
+        String countQuery = "SELECT count(*) FROM internet_shop.basket WHERE idUser=" + request.getSession().getAttribute("idUser") + ";";
 
         String query = "select history.id, history.idUser, history.assessment, history.price, history.`time`, history.idProduct, products.`name`, products.description, products.image\n" +
                 "\tfrom history\n" +

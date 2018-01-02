@@ -28,7 +28,7 @@ public class ShowBasket extends HttpServlet {
         }
         int count = 0;
         int amount = 0;
-        String countQuery = "SELECT count(*) FROM internet_shop.basket;";
+        String countQuery = "SELECT count(*) FROM internet_shop.basket WHERE idUser=" + request.getSession().getAttribute("idUser") + ";";
         String queryBasket = "select basket.idUser, products.id, products.`name`, products.description, products.popular, products.discount_amount, products.price, products.image\n" +
                 "\tfrom basket\n" +
                 "    inner join products\n" +
